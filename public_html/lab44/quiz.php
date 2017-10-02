@@ -12,7 +12,7 @@ $ans[4] = $_POST['q5'];
 //              "$_POST['q4'];" );
 $correctAns = array("a","b","c","d","e");
 
-$ansValue = array("Kansas", "Red", "Washington D.C","2017", "Dark Vader");
+$ansValue = array("Kansas", "Red", "Washington D.C.","2017", "Dark Vader");
 $questions = array("What state is ku in ?",
                   "What color is on the USA State Flag?",
                   "What is the capital city of America?",
@@ -38,11 +38,13 @@ echo "<div id='results'>
 <p>The Correct answer:  $ansValue[$i]</p>
 </ul>
 
-$totalCorrect / 5 correct</div>";
+</div>";
 
-$precentage = ($totalCorrect / 5)*100;
 }
 
-echo "<div id='results'> $precentage% </div>";
+$precentage = ($totalCorrect / 5)*100;
+
+
+echo "<div id='results'><p> $totalCorrect / 5 correct </p> <p>$precentage% </p></div>";
 
 ?>
