@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="formChecker.js">
+    </script>
+    <link rel="stylesheet" href="style_exercise4.css">
+</head <body>
+<h1 style="text-align:center;">Welcome To The Store</h1>
+
+<div class="left">
+
+  <form action="customerBackend.php">
+    <div>
+        <p>Shipping Method </p>
+        <ul class="answers">
+            <input type="radio" name="ship" value="0" id="shipa"><label for="q1a">Free 7 day</label><br/>
+            <input type="radio" name="ship" value="50" id="shipb"><label for="q1b">$50.00 over night</label><br/>
+            <input type="radio" name="ship" value="5" id="shipc"><label for="q1c">$5.00 three day</label><br/>
+        </ul>
+    </div>
+        Email: <input type="text" name="email" id="email" required><br> Password: <input type="password" name="password" id="password" required><br>
+
+        <button formaction="customerBackend.php" type="submit" onclick="checkemail();">Submit</button>
+</div>
+
+
+<div class="right">
+
+    <div class="con">
+        <table style="width:100%">
+            <tr>
+                <th>
+                    <div id="container" class="grow">
+                        <img id="myImg" src="p1.jpg">
+                        <p text-align:center> Camera</p>
+                        <input id="p1" type="number" name="p1" size="1" value="0">
+                    </div>
+                </th>
+                <th>
+                    <div id="container" class="grow">
+                        <img id="myImg" src="p2.jpg">
+                        <p>Golden Pen</p>
+                        <input id="p2" type="number" name="p2" size="1" value="0">
+                    </div>
+                </th>
+                <th>
+                    <div id="container" class="grow">
+                        <img id="myImg" src="p3.jpg">
+                        <p>High tech Pen</p>
+                        <input id="p3" type="number" name="p3" size="1" value="0">
+                    </div>
+                </th>
+            </tr>
+
+            </tr>
+        </table>
+
+
+
+    </div>
+</div>
+  </form>
+</body>
+
+</html>

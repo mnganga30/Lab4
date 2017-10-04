@@ -14,12 +14,6 @@ for($c = 0; $c < 101; $c++)
 // print the current value of $val
 echo $val."<br/>------------------<br/>";
 
-// print the array
-// for($r = 0; $r < 4; $r++) {
-// for($c = 0; $c < 4; $c++)
-//     echo $twoD[$r][$c];
-// echo "<br/>";
-// }
 
 $html = '<table>';
 // header row
